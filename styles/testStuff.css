@@ -1,0 +1,37 @@
+&::before {
+    content: 'f';
+    background-color: var(--color-grey-3);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: absolute;
+    top: 14%;
+    left: -132%;
+    z-index: -1;
+    transition: all 0.4s ease-out;
+
+}
+
+&:hover {
+    background-color: wheat;
+
+    &::before {
+        width: 0rem;
+        height: 0rem;
+        animation: leftGrow 1s ease-in-out;
+
+        @keyframes leftGrow {
+            0% {
+                width: 0rem;
+                height: 2.5rem;
+            }
+
+            100% {
+                width: 5.5rem;
+                height: 2.5rem;
+            }
+        }
+
+        transform: translateX(-100%);
+        transition: all 0.4s ease-out;
+    }
+}
