@@ -1348,32 +1348,41 @@ section {
   }
 
   .contact-container .contact-left .contact-left-item {
-    margin-bottom: 1.2rem;
-    padding: 1.2rem;
+    display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    gap: 1rem;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+    padding: 1.2rem 0.5rem;
   }
 
   .contact-container .contact-left .contact-left-item .icon {
+    margin: 0 auto 0.5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50px;
     height: 50px;
     font-size: 1.2rem;
-    margin: 0 auto;
   }
 
   .contact-container .contact-left .contact-left-item .contact-info {
     text-align: center;
+    width: 100%;
   }
 
   .contact-container .contact-left .contact-left-item .contact-info h4 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
+    width: 100%;
   }
 
   .contact-container .contact-left .contact-left-item .contact-info p {
     font-size: 1rem;
     line-height: 1.5;
+    width: 100%;
   }
 
   .contact-container .contact-left .bottom-btns {
